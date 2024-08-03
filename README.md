@@ -18,7 +18,7 @@ Eat and Split is a web application designed to simplify dining expenses among fr
 ## Getting Started
 ### Installation
 ```
-git clone https://github.com/your-username/Eat_and_Split.git
+git clone https://github.com/DiogoCoelho98/Eat_and_Split.git
 cd Eat_and_Split
 ```
 ```
