@@ -41,7 +41,7 @@ export default function App() {
   }
 
   function handleSelectedFriend(friend) {
-    setSelectFriend(current => current?.id === friend.id ? null : friend); //Chain operator to deal with errors (null/undefined)
+    setSelectFriend(current => current?.id === friend.id ? null : friend);
     setIsToggle(false);
   }
 
@@ -61,7 +61,7 @@ export default function App() {
           <Button onHandleToggle={handleToggle}>{isToggle ? "Close" : "Add Friend"}</Button>
       </div>
 
-          {selectedFriend && <FormSplitBill onSelectedFriend={selectedFriend} onHandleSplitBill={handleSplitBill}/>}
+          {selectedFriend && <FormSplitBill key={selectedFriend.id} onSelectedFriend={selectedFriend} onHandleSplitBill={handleSplitBill}/>}
     </div>
     </>
   )
